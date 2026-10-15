@@ -1,0 +1,83 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+          content="Dishant Mahable is a Full Stack .NET Developer specializing in C#, ASP.NET Core, Web APIs, and SQL Server. Available for freelance and part-time projects." />
+    <title>@ViewData["Title"] - Dishant Mahable | Full Stack .NET Developer</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+<body>
+
+    <nav class="portfolio-nav">
+        <a class="brand" asp-controller="Home" asp-action="Index">
+            <span class="brand-mark">DM</span>
+            <span>
+                <strong>Dishant Mahable</strong>
+                <small>Full Stack Developer</small>
+            </span>
+        </a>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <a href="#contact" class="nav-cta">Hire Me</a>
+    </nav>
+
+    <main>
+        @RenderBody()
+    </main>
+
+
+    <footer class="portfolio-footer" id="footer">
+        <div class="footer-contact-row">
+            <a href="tel:+919978671277" class="footer-contact-item">
+                <span class="footer-phone-icon">&#9742;</span>
+                <span>+91 99786 71277</span>
+            </a>
+
+            <a href="mailto:dishantmahable2205@gmail.com"
+               class="footer-contact-item">
+                <span class="footer-mail-icon">&#9993;</span>
+                <span>dishantmahable2205@gmail.com</span>
+            </a>
+        </div>
+
+        <div class="footer-social-row">
+            <div class="footer-socials">
+                <a href="YOUR_LINKEDIN_URL" target="_blank"
+                   rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="YOUR_GITHUB_URL" target="_blank"
+                   rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="YOUR_INSTAGRAM_URL" target="_blank"
+                   rel="noopener noreferrer" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+
+            <a href="#home" class="back-to-top">&uarr; Back to Top</a>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; @DateTime.Now.Year Dishant Mahable. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>
